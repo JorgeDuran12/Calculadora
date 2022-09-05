@@ -1,0 +1,89 @@
+:root{
+
+    --primary:#d81e5b;
+    --secondary:#8c38ff;
+    --dark:#131a26;
+    --light:#eee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Fira Sabs', sans-serif;
+}
+
+.App{
+    display:flex;
+    min-height:100vh;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+    background: linear-gradient(45deg, red, rgb(255, 98, 0), rgb(67, 175, 51),rgb(145, 21, 58),rgb(67, 1, 12));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 7s ease-in-out infinite;
+}
+
+@keyframes cambiar{
+ 0%{background-position: 0 50%;}
+ 50%{background-position: 100% 50%;}
+ 100%{background-position: 0 50%;}
+}
+.calculator{
+    width:100%;
+    max-width:400px;
+    background-color:#FFF;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.display{
+    padding:16px;
+    text-align:right;
+    background-color:var(--dark);
+    color:var(--light);
+    font-size:24px;
+    font-weight:300;
+}
+
+.display span{
+    font-size:14px;
+    color:#888;
+}
+
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    color:#FFF;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.operadores{
+    display:flex;
+}
+
+.operadores button{
+    flex:1 1 0%;
+    background-color:var(--primary);
+    font-weight:700;
+}
+
+.digitos{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.digitos button{
+    flex: 1 1 33.333%;
+    max-width:33.333%;
+    background-color:var(--dark);
+}
