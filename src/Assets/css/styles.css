@@ -18,7 +18,7 @@
     min-height:100vh;
     align-items:center;
     justify-content:center;
-    padding:16px;
+    padding: 20px;
     background: linear-gradient(45deg, red, rgb(255, 98, 0), rgb(67, 175, 51),rgb(145, 21, 58),rgb(67, 1, 12));
     background-size: 400% 400%;
     position: relative;
@@ -31,34 +31,35 @@
  100%{background-position: 0 50%;}
 }
 .calculator{
-    width:100%;
-    max-width:400px;
+    width:200%;
+    max-width: 440px;
     background-color:#FFF;
     border-radius:16px;
     overflow:hidden;
 }
 
 .display{
-    padding:16px;
+    padding:18px;
     text-align:right;
     background-color:var(--dark);
     color:var(--light);
-    font-size:24px;
+    font-size:30px;
     font-weight:300;
+    
 }
-
+/* 
 .display span{
     font-size:14px;
     color:#888;
-}
+} */
 
 button{
     appearance: none;
     border: none;
     outline: none;
     color:#FFF;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 25px;
+    padding: 25px;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -74,7 +75,7 @@ button:hover{
 .operadores button{
     flex:1 1 0%;
     background-color:var(--primary);
-    font-weight:700;
+    font-weight:300;
 }
 
 .digitos{
