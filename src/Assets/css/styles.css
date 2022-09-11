@@ -1,9 +1,9 @@
 :root{
 
     --primary:#d81e5b;
-    --secondary:#8c38ff;
     --dark:#131a26;
     --light:#eee;
+    
 }
 
 *{
@@ -19,17 +19,12 @@
     align-items:center;
     justify-content:center;
     padding: 20px;
-    background: linear-gradient(45deg, red, rgb(255, 98, 0), rgb(67, 175, 51),rgb(145, 21, 58),rgb(67, 1, 12));
     background-size: 400% 400%;
     position: relative;
-    animation: cambiar 7s ease-in-out infinite;
+    background: radial-gradient(circle at 64.69% 9.63%, #c3b53a 0, #cdae34 5.56%, #d6a62f 11.11%, #de9c2b 16.67%, #e5912a 22.22%, #ea852b 27.78%, #ef772d 33.33%, #f16731 38.89%, #f35436 44.44%, #f23c3c 50%, #f01843 55.56%, #ed004c 61.11%, #e90057 66.67%, #e30063 72.22%, #db0071 77.78%, #d10080 83.33%, #c5008f 88.89%, #b6009f 94.44%, #a300af 100%);
+
 }
 
-@keyframes cambiar{
- 0%{background-position: 0 50%;}
- 50%{background-position: 100% 50%;}
- 100%{background-position: 0 50%;}
-}
 .calculator{
     width:200%;
     max-width: 440px;
@@ -57,7 +52,7 @@ button{
     appearance: none;
     border: none;
     outline: none;
-    color:#FFF;
+    color:var(--light);
     font-size: 25px;
     padding: 25px;
     cursor: pointer;
