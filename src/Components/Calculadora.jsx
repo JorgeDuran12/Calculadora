@@ -6,7 +6,7 @@ const Calculadora = () => {
   const [calc, setCalc]= useState("");
   const [setResult] = useState ("");
 
-  const ops=['/','*','+','-','.'];
+  const ops=['/','*','+','-','.','%'];
 
   const updatecalc = value =>{
 
@@ -87,6 +87,7 @@ const Calculadora = () => {
                 <button onClick={() => updatecalc ('0')}>0</button>
                 <button onClick={() => updatecalc ('.')}>.</button>
                 <button onClick={calcular}>=</button>
+		<button onClick={() => updatecalc ('%')}>%</button>
 
             </div>
 
