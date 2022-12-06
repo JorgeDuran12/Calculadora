@@ -16,8 +16,8 @@
 .App{
     display: flex;
     min-height: 100vh;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background-size: 400% 400%;
     position: relative;
@@ -26,8 +26,8 @@
 }
 
 .calculator{
-    width:100%;
-    max-width: 425px;
+    width:150%;
+    max-width: 450px;
     background-color:#FFF;
     border-radius:16px;
     overflow:hidden;
@@ -53,7 +53,7 @@ button{
     border: none;
     outline: none;
     color:var(--light);
-    font-size: 25px;
+    font-size: 20px;
     padding: 25px;
     cursor: pointer;
     transition: 0.4s;
@@ -64,7 +64,7 @@ button:hover{
 }
 
 .operadores{
-    display:flex;
+    display: flex;
 }
 
 .operadores button{
@@ -75,11 +75,11 @@ button:hover{
 
 .digitos{
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .digitos button{
     flex: 1 1 33.333%;
-    max-width:33.333%;
+    max-width: 35,555%;
     background-color:var(--dark);
 }
