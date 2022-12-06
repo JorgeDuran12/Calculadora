@@ -26,8 +26,8 @@
 }
 
 .calculator{
-    width:200%;
-    max-width: 440px;
+    width:150%;
+    max-width: 420px;
     background-color:#FFF;
     border-radius:16px;
     overflow:hidden;
