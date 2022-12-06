@@ -27,14 +27,14 @@
 
 .calculator{
     width:150%;
-    max-width: 450px;
+    max-width:400px;
     background-color:#FFF;
-    border-radius:16px;
-    overflow:hidden;
+    border-radius:30px;
+    overflow: hidden;
 }
 
 .display{
-    padding:18px;
+    padding:14px;
     text-align:right;
     background-color:var(--dark);
     color:var(--light);
@@ -54,7 +54,7 @@ button{
     outline: none;
     color:var(--light);
     font-size: 20px;
-    padding: 25px;
+    padding: 15px;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -80,6 +80,6 @@ button:hover{
 
 .digitos button{
     flex: 1 1 33.333%;
-    max-width: 35,555%;
+    max-width: 33.333%;
     background-color:var(--dark);
 }
